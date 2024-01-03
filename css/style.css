@@ -5,6 +5,7 @@
     --color-headings: #1b0760;
     --color-body: #918ca4;
 }
+/*typography*/
 html{
     font-size: 62.5%;
 }
@@ -47,5 +48,35 @@ p{
     h3{
         font-size: 2.4rem;
     }
+    
+}
+/* links */
+a{
+    text-decoration: none;
+}
+.arow-learn{
+    font-size: 2rem;
+    color: var(--accent-color);
+    text-transform: uppercase;
+    text-decoration: none;
+    font-weight: bold;
+  
+
+}
+.arow-learn::after{
+    content:'-->';
+    margin-left: 5px;
+    transform: margin 0.15s ;
+}
+.arow-learn:hover::after{
+    margin-left: 10px;
+}
+
+@media screen and (min-width: 1024px) {
+    .arow-learn{
+        font-size: 1.5rem;
+    }
+    
+
     
 }
