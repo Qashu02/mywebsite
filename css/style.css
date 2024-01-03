@@ -78,6 +78,7 @@ a{
     }
 }
 /*Badges*/
+
 .badge{
     border-radius: 20px;
     font-size: 2rem;
@@ -85,8 +86,8 @@ a{
     padding: 0.5rem 2rem;
     white-space: nowrap;
     text-transform: uppercase;
-    ani
 }
+
 .badge--primary,.badge--secondary{
     color: white;
     background-color: var(--primary-color); 
@@ -102,5 +103,32 @@ a{
     .badge--small{
         font-size: 1.3rem;
     }
+    
+}
+/* lists */
+
+.list{
+    list-style: none;
+    padding-left: 0rem;
+    color: var(--color-headings);
+}
+.list--inline li{
+    display: inline-block;
+   margin-right: 2rem;
+}
+.list--tick{
+    list-style-image: url(../images/tick.svg);
+    margin-left: 2rem;
+
+}
+.list--tick li{
+    padding-left: 2rem;
+    margin-bottom: 1rem;
+}
+
+@media screen and (min-width:1024px) {
+.list--tick li{
+    padding: 0;
+}
     
 }
