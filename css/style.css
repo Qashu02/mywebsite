@@ -123,14 +123,14 @@ a{
     margin-left: 2rem;
 
 }
-.list--tick li{
+.list--tick, .list__item{
     padding-left: 2rem;
     margin-bottom: 1rem;
 }
 
 @media screen and (min-width:1024px) {
 .list--tick li{
-    padding: 0;
+    padding: inherit;
 }
     
 }
@@ -163,7 +163,8 @@ cursor: pointer;
 font-size: 1.8rem;
 font-weight: 600;
 margin: 1rem;
-padding: 2rem 3rem;
+padding: 2rem;
+width: 100%;
 text-align: center;
 text-transform: uppercase;
 white-space: nowrap;
@@ -237,3 +238,86 @@ white-space: nowrap;
         font-size: 1.5rem;
     }
 }
+/* Cards */
+
+.card{
+border-radius: 10px;
+box-shadow: 0 0 10px gray;
+overflow: hidden;
+}
+.card__header,.card__body{
+
+    padding: 2rem 3rem;
+}
+.card--primary .card__heading{
+    color: white;
+    background-color: var(--primary-color);
+    padding: 1rem;
+    position: relative;
+
+}
+.card--secondary .card__heading{
+    color: white;
+    background-color: var(--secondary-color);
+}
+
+.card--primary .head__name{
+    color: white;
+    font-size: 2.4rem;
+    font-weight: 500;
+    margin: 0;
+}
+.card--primary .head__price{
+    color: white;
+    font-size: 6rem;
+}
+.card--primary .head__duration{
+    color: white;
+    font-size: 2.4rem;
+    font-weight: 300;
+    opacity: 0.8;
+    margin-right: 1rem;
+}
+.card--primary .badge--small{
+    color: white;
+    background: var(--secondary-color);
+    padding: 0.3rem 1rem;
+}
+.card--primary .head__description{
+    font-size: 2rem;
+    font-weight: 300;
+    letter-spacing: 2px;
+    display: block;
+}
+
+.card--primary .card__body{
+    line-height:3rem;
+    letter-spacing: 2px;
+}
+
+.popular .card__heading::before{
+    content: url(../images/popular.svg);
+    width: 40px;
+    display: inline-block;
+    position: absolute;
+    top: -5px;
+    right: 5%;
+}
+@media screen and (min-width: 1024px) {
+    .head__name {
+      font-size: 1.4rem;
+    }
+  
+    .head__price {
+      font-size: 5rem;
+    }
+  
+    .head__duration {
+      font-size: 1.6rem;
+    }
+  
+    .head__description {
+      font-size: 1.7rem;
+    }
+  }
+  
