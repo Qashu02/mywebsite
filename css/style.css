@@ -4,6 +4,7 @@
     --accent-color:#ff3400;
     --color-headings: #1b0760;
     --color-body: #918ca4;
+    --color-body-dark: #5c5577;
     --border-color:#ccc;
     --border-radius:30px;
 }
@@ -338,3 +339,47 @@ overflow: hidden;
     margin-top: 1rem;
   }
   
+  .quote{
+    font-size: 3rem;
+    color: var(--color-body-dark);
+    font-style: italic;
+    line-height: 1.3;
+  }
+  .quote__body::before{
+    content: open-quote;
+
+  }
+  .quote__body::after{
+    content: close-quote;
+  }
+  .own__name{
+    margin-top: 0;
+    font-size: 3rem;
+    font-weight: 500;
+    margin-bottom: 0;
+    font-style: normal;
+  }
+  .own{
+    color: var(--color-headings);
+    font-size: 2rem;
+    font-style: normal;
+   
+    opacity: 0.4;
+  }
+.quote__line{
+
+    position: relative;
+    bottom: 10px;
+}
+
+@media screen and (min-width:1024px) {
+    .quote{
+        font-size: 2rem;
+    }
+    .own__name{
+        font-size: 2.4rem;
+    }
+    .own{
+        font-size: 1.6rem;
+    }
+}
