@@ -480,7 +480,7 @@ right: -32px;
 .callout .btn{
     justify-self: center;
    align-self: center;
- 
+ overflow: visible;
    box-sizing: border-box;
  
     }
