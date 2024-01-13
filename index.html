@@ -14,27 +14,33 @@
     />
   </head>
   <body>
-    <section class="block block--dark block--skewed-left hero">
-      <div class="container grid grid--1x2">
-        <header class="block__header">
-          <h1 class="block__heading">Cloud Hosting for Pros</h1>
-          <p class="block__tagline">Deploy your website in 60 seconds</p>
-          <a href="#" class="btn btn--accent btn--streched">Get Started</a>
-        </header>
-        <picture>
-          <source
-            srcset="images/banner.webp 1x, images/banner@2x.webp 2x"
-            type="image/webp"
-          />
 
-          <source
-            srcset="images/banner.png 1x, images/banner@2x.png 2x"
-            type="image/webp"
-          />
-          <img class="hero__image" src="/images/banner.png" alt="" />
-        </picture>
+
+    <section class="block container  block--domain">
+      <header class="block__header">
+        <h2 class="block__heading">Start with 9$</h2>
+        <p>
+          Lorem ipsum dolor sit amet consectetur, adipisicing elit. Repellat,
+          obcaecati!
+        </p>
+      </header>
+      <div class="input--group">
+        <input type="text" class="input" placeholder="Enter domain name" />
+        <button class="btn btn--accent " > <svg class="icon icon--white icon--search">
+          <use xlink:href="images/sprite.svg#search"></use>
+        </svg>
+        Search </button>
       </div>
-    </section>
+   <ul class="list block--prices">
+    <li>.com 9$</li>
+    <li> <span class="badge badge--secondary badge--small">.soc $3</span></li>
+    <li>.pk 6$</li>
+    <li>.gov 8$</li>
+    
+    <li>.cd 5$</li>
+  
+    <li>more</li>
+   </ul>
     <script src="/js/main.js"></script>
   </body>
 </html>
