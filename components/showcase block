@@ -1,0 +1,62 @@
+<section class="block block--dark block--skewed-right showcase">
+  <header class="block__header">
+    <h2>User Friendly Control Pannel</h2>
+  </header>
+  <div class="grid grid--1x2 container">
+    <picture class="showcase--image">
+      <source
+        type="image/webp"
+        srcset="images/ipad.webp 1x, images/ipad@2x.webp 2x"
+      />
+      <source
+        type="image/png"
+        srcset="images/ipad.png 1x, images/ipad@2x.png 2x"
+      />
+      <img src="/images/ipad.png" alt="" />
+    </picture>
+    <ul class="list">
+      <li>
+        <div class="media">
+          <div class="media__image">
+            <svg class="icon icon--primary">
+              <use xlink:href="images/sprite.svg#snap"></use>
+            </svg>
+          </div>
+          <div class="media__body">
+            <h3 class="media__title">Easy way to upgrade</h3>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam
+            fugiat itaque modi, rem placeat possimus sapiente vel
+          </div>
+        </div>
+      </li>
+      <li>
+        <div class="media">
+          <div class="media__image">
+            <svg class="icon icon--primary">
+              <use xlink:href="images/sprite.svg#growth"></use>
+            </svg>
+          </div>
+          <div class="media__body">
+            <h3 class="media__title">Easy way to upgrade</h3>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam
+            fugiat itaque modi, rem placeat possimus sapiente vel
+          </div>
+        </div>
+      </li>
+      <li>
+        <div class="media">
+          <div class="media__image">
+            <svg class="icon icon--primary">
+              <use xlink:href="images/sprite.svg#wordpress"></use>
+            </svg>
+          </div>
+          <div class="media__body">
+            <h3 class="media__title">Easy way to upgrade</h3>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam
+            fugiat itaque modi, rem placeat possimus sapiente vel
+          </div>
+        </div>
+      </li>
+    </ul>
+  </div>
+</section>
