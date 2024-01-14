@@ -489,7 +489,7 @@ transition: transform .2s ease-out;
 /* testimonial */
 .test{
     padding: 3rem;
-    overflow: visible;
+
 }
 .test__image{
     position: relative;
@@ -606,9 +606,11 @@ padding: var(--padding-vertical) 3rem;
 }
 .block__header{
     text-align: center;
+    margin-bottom: 4rem;
 }
 .block__heading{
     margin-top: 0;
+    color: var(--color-headings);
 }
 .block--dark{
     background: #000;
