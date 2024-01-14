@@ -14,49 +14,74 @@
     />
   </head>
   <body>
-    <setion class="block">
-      <header class="block__header">
-        <h2 class="block__heading">What our customer saying</h2>
-        <p>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Est, esse?
-        </p>
-      </header>
-      <div class="container">
-        <div class="card test">
-          <div class="grid grid--1x2">
-            <div class="test__image">
-              <img src="images/testimonial.jpg" alt="" />
-              <span class="icon-container icon--accent">
-                <svg class="icon icon--white icon--small">
-                  <use xlink:href="images/sprite.svg#quotes"></use>
-                </svg>
-              </span>
-            </div>
-            <blockquote class="quote">
-              <p class="quote__body">
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iure
-                quia possimus amet dignissimos magnam iusto quidem commodi eum
-                excepturi mollitia. Tempore, soluta est ratione laboriosam omnis
-                voluptate velit minima modi?
-              </p>
-              <footer>
-                <div class="media">
-                  <div class="media__image">
-                    <svg class="icon icon--primary quote__line">
-                      <use xlink:href="images/sprite.svg#line"></use>
-                    </svg>
-                  </div>
-                  <div class="media__body">
-                    <h3 class="own__name">Mr.Qasim</h3>
-                    <p class="own">CEO ISLAMIC</p>
-                  </div>
-                </div>
-              </footer>
-            </blockquote>
+    <footer class="block block--dark footer">
+      <div class="container grid footer--sections">
+        <section class="collapsible collapsible--expanded footer--section">
+          <header class="collapsible--header">
+            <h2 class="collapsible--heading footer--heading">Products</h2>
+            <svg class="icon icon--white chevron">
+              <use xlink:href="images/sprite.svg#chevron"></use>
+            </svg>
+          </header>
+          <div class="collapsible--content">
+            <ul class="list">
+              <li><a href="#">Website Hosting</a></li>
+              <li><a href="#">Free Automated Wordpress</a></li>
+              <li><a href="#">Migrations</a></li>
+            </ul>
           </div>
-        </div>
+        </section>
+        <section class="collapsible footer--section">
+          <header class="collapsible--header">
+            <h2 class="collapsible--heading footer--heading">Company</h2>
+            <svg class="icon icon--white chevron">
+              <use xlink:href="images/sprite.svg#chevron"></use>
+            </svg>
+          </header>
+          <div class="collapsible--content">
+            <ul class="list">
+              <li><a href="#">About</a></li>
+              <li><a href="#">Affiliates</a></li>
+              <li><a href="#">Blog</a></li>
+            </ul>
+          </div>
+        </section>
+        <section class="collapsible footer--section">
+          <header class="collapsible--header">
+            <h2 class="collapsible--heading footer--heading">Support</h2>
+            <svg class="icon icon--white chevron">
+              <use xlink:href="images/sprite.svg#chevron"></use>
+            </svg>
+          </header>
+          <div class="collapsible--content">
+            <ul class="list">
+              <li><a href="#">Contact</a></li>
+              <li><a href="#">Knowledge Base</a></li>
+              <li><a href="#">FAQ</a></li>
+            </ul>
+          </div>
+        </section>
+        <section class="collapsible footer--section">
+          <header class="collapsible--header">
+            <h2 class="collapsible--heading footer--heading">Domains</h2>
+            <svg class="icon icon--white chevron">
+              <use xlink:href="images/sprite.svg#chevron"></use>
+            </svg>
+          </header>
+          <div class="collapsible--content">
+            <ul class="list">
+              <li><a href="#">Domain Checker</a></li>
+              <li><a href="#">Domain Transfer</a></li>
+              <li><a href="#">Free Domain</a></li>
+            </ul>
+          </div>
+        </section>
+        <section class="footer--brand">
+          <img src="images/logo.svg" alt="" />
+          <p class="footer--copyright">Copyright 2020 Mosh Hamedani</p>
+        </section>
       </div>
-    </setion>
+    </footer>
 
     <script src="/js/main.js"></script>
   </body>
