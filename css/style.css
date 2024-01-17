@@ -29,7 +29,8 @@ body{
     line-height: 1.5;
 }
 h1,h2,h3{
-    color: var(--color-headings);
+ 
+   
   margin-bottom: 1rem;
   line-height: 1.1;
 }
@@ -39,6 +40,7 @@ h1{
 }
 h2{
     font-size: 4rem;
+
 }
 h3{
     font-size: 3rem;
@@ -58,6 +60,7 @@ p{
     }
     h2{
         font-size: 4rem;
+        color: white;
     }
     h3{
         font-size: 2.4rem;
@@ -127,6 +130,7 @@ a{
 
 .list{
     list-style: none;
+
     padding-left: 0rem;
    
 }
@@ -147,7 +151,7 @@ a{
 
 @media screen and (min-width:1024px) {
 .list--tick li{
-    padding: inherit;
+padding-left: 0;
 }
     
 }
@@ -192,9 +196,9 @@ cursor: pointer;
 font-size: 1.8rem;
 font-weight: 600;
 margin: 1rem 0;
-padding: 2rem 3rem;
+padding: 2rem 4vw;
 outline: 0;
-width: 100%;
+
 text-align: center;
 text-transform: uppercase;
 white-space: nowrap;
@@ -278,6 +282,7 @@ white-space: nowrap;
     flex-grow: 1;
     padding: 1.5rem 2rem;
     box-sizing: border-box;
+    width: 0;
 
 }
 .input--group .btn{
@@ -326,6 +331,7 @@ transition: transform .2s ease-out;
     transform: scale(1.05);
   }
 
+
 /* Plans */
 .plan__name {
     color: #fff;
@@ -335,11 +341,11 @@ transition: transform .2s ease-out;
   }
   
   .plan__price {
-    font-size: 6rem;
+    font-size: 5rem;
   }
   
   .plan__duration {
-    font-size: 2.4rem;
+    font-size: 2rem;
     font-weight: 300;
     opacity: 0.8;
     margin-right: 1rem;
@@ -605,18 +611,23 @@ transition: all 0.5s;
 padding: var(--padding-vertical) 3rem;
 }
 .block__header{
+    color: var(--color-headings);
     text-align: center;
     margin-bottom: 4rem;
+
+}
+.block__header p{
+color:var(--color-body);
 }
 .block__heading{
     margin-top: 0;
-    color: var(--color-headings);
+
 }
 .block--dark{
     background: #000;
     color: #7b858b;
 }
-.block--dark .block__heading,h2{
+.block--dark .block__header{
     color: white;
 }
 .block--skewed-right {
@@ -641,7 +652,7 @@ padding: var(--padding-vertical) 3rem;
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
-    padding: 0 1rem;
+    padding:  1rem;
     align-items: center;
   }
 
@@ -683,6 +694,7 @@ padding: var(--padding-vertical) 3rem;
 }    
 
 @media screen  and (min-width:768px){
+ 
     .nav__toggler{
         display: none;
     }
@@ -716,11 +728,15 @@ width: 100%;
 @media screen and (min-width:768px) {
     .hero{
         padding-top: 0;
+        
     }
-    .block__header{
+   .hero .block__header{
         text-align: left;
+
         align-self: center;
+
     }
+
 }
 
 /* block domain */
@@ -730,13 +746,14 @@ width: 100%;
     border: 0;
     margin:  4rem auto;
     max-width: 670px;
-    box-sizing: border-box;
-    justify-content: flex-end;
+  justify-content: flex-end;
+    
   }
   
   .block--prices {
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
+    color: var(--color-headings);
+    grid-template-columns: repeat(2, 1fr);
     grid-template-rows: repeat(2, 6rem);
     font-size: 2rem;
     font-weight: 600;
@@ -751,10 +768,10 @@ width: 100%;
   
   @media screen and (min-width: 768px) {
     .block--prices {
-      grid-template-columns: repeat(auto-fit, minmax(7rem, 1fr));
+      grid-template-columns: repeat(auto-fit, minmax(10rem, 1fr));
 
     }
-    .block__header{
+  .block--domain  .block__header{
         text-align: center;
     }
   }
@@ -779,8 +796,12 @@ gap: 4rem 2rem;
 margin: 12rem 0;
 
   }
+  .block--feature .block__header{
+    color: var(--color-headings);
+  }
 .feature__heading{
     margin: 1rem 0;
+    color: var(--color-headings);
 }
 .block--feature:first-of-type{
     margin-top: 6rem;
@@ -796,9 +817,15 @@ margin: 12rem 0;
 {
     order: 2;
 }
+.block--feature .block__header{
+    text-align: center;
+}
 }
 
 /* Showcaseblock */
+.showcase .block__header{
+    color: white;
+}
 .showcase--image >img{
     width: 100%;
 }
@@ -809,6 +836,9 @@ margin: 12rem 0;
     }
     .showcase--image{
         justify-self:end ;
+    }
+    .showcase .block__header{
+        color: white;
     }
    
     .showcase--image >img{
@@ -839,8 +869,9 @@ margin: 12rem 0;
     margin: 0;
 }
 .footer--heading{
-    text-transform: capitalize;
+    text-transform: uppercase;
     font-weight: 600;
+    color: white;
 }
 
 .footer--brand{
@@ -863,7 +894,7 @@ margin: 12rem 0;
         font-size: 1.5rem;
        
     }
-    .footer--sections{
+    .footer--sections {
         grid-template-columns: repeat(auto-fit, minmax(10rem, 1fr));
     
     }
@@ -889,4 +920,9 @@ margin: 12rem 0;
     .footer--heading{
         font-size: 1.5rem;
     }
+}
+
+/* Callout Signup */
+.callout--signup{
+    transform: translateY(5rem);
 }
